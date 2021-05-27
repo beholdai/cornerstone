@@ -57,7 +57,6 @@ export default function (element, image, viewport) {
 
   enabledElement.lastImageTimeStamp = now();
 
-  console.log("displayImage/newImageEventData: ", newImageEventData);
   const newImageEventData = {
     viewport: enabledElement.viewport,
     element: enabledElement.element,
@@ -66,6 +65,7 @@ export default function (element, image, viewport) {
     enabledElement,
     frameRate,
   };
+  console.log("displayImage/newImageEventData: ", newImageEventData);
 
   triggerEvent(enabledElement.element, EVENTS.NEW_IMAGE, newImageEventData);
 

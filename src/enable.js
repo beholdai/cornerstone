@@ -86,7 +86,7 @@ export default function (element, options) {
     if (enabledElement.canvas === undefined) {
       return;
     }
-    console.log("drawInEnable: ", draw);
+    console.log("drawInEnable: ");
 
     const eventDetails = {
       enabledElement,
